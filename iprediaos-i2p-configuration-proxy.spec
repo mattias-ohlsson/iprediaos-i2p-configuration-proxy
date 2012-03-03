@@ -19,9 +19,9 @@ Configuration for i2p proxy.
 %setup -q
 
 
-%build
-%configure
-make %{?_smp_mflags}
+#%build
+#%configure
+#make %{?_smp_mflags}
 
 
 %install
