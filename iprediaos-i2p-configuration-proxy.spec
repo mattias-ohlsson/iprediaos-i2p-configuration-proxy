@@ -6,7 +6,7 @@ Summary:	Proxy configuration for IprediaOS
 Group:		System Environment/Base
 License:	GPL
 URL:		http://www.ipredia.org
-Source0:	iprediaos-i2p-configuration-proxy.tar.bz2
+Source0:	%{name}-%{version}.tar.bz2
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
 Requires:	i2p
