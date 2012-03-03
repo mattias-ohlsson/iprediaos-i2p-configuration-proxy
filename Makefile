@@ -9,8 +9,8 @@ tag:
 	@echo "Tagged as $(TAG)"
 
 install: 
-	@install -D -m 0644 proxy.sh ${PREFIX}/etc/profile.d/proxy.sh
-	@install -D -m 0644 proxy.csh ${PREFIX}/etc/profile.d/proxy.csh
+	@install -D -m 0644 proxy.sh ${DESTDIR}/etc/profile.d/proxy.sh
+	@install -D -m 0644 proxy.csh ${DESTDIR}/etc/profile.d/proxy.csh
 
 archive: tag
 	@git archive --format=tar --prefix=$(NAME)-$(VERSION)/ HEAD > $(NAME)-$(VERSION).tar
