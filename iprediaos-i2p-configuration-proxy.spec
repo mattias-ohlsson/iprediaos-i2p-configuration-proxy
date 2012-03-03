@@ -8,6 +8,7 @@ License:	GPL
 URL:		http://www.ipredia.org
 Source0:	%{name}-%{version}.tar.bz2
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
+BuildArch:	noarch
 
 Requires:	i2p
 
