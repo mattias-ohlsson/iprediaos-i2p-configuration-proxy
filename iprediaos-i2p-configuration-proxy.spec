@@ -1,18 +1,18 @@
-Name:		
-Version:	
+Name:		iprediaos-i2p-configuration-proxy
+Version:	0.0.1
 Release:	1%{?dist}
-Summary:	
+Summary:	Proxy configuration for IprediaOS
 
-Group:		
-License:	
-URL:		
-Source0:	
+Group:		System Environment/Base
+License:	GPL
+URL:		http://www.ipredia.org
+Source0:	iprediaos-i2p-configuration-proxy.tar.bz2
 BuildRoot:	%(mktemp -ud %{_tmppath}/%{name}-%{version}-%{release}-XXXXXX)
 
-BuildRequires:	
-Requires:	
+Requires:	i2p
 
 %description
+Configuration for i2p proxy.
 
 
 %prep
