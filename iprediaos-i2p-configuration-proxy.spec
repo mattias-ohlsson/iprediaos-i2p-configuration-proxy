@@ -1,6 +1,6 @@
 Name:		iprediaos-i2p-configuration-proxy
 Version:	0.0.1
-Release:	1%{?dist}
+Release:	2%{?dist}
 Summary:	Proxy configuration for IprediaOS
 
 Group:		System Environment/Base
