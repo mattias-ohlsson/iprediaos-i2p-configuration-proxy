@@ -29,11 +29,11 @@ make install DESTDIR=$RPM_BUILD_ROOT
 %post
 # Set proxy
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory --type=string --set /system/proxy/mode "manual"
-gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory --type=bool --set /system/http_proxy/use_same_proxy "TRUE"
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory --type=bool --set /system/http_proxy/use_http_proxy "TRUE"
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory --type=string --set /system/http_proxy/host "localhost"
 gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory --type=int --set /system/http_proxy/port "4444"
-
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory --type=string --set /system/proxy/secure_host "localhost"
+gconftool-2 --direct --config-source xml:readwrite:/etc/gconf/gconf.xml.mandatory --type=int --set /system/proxy/secure_port "4445"
 
 %clean
 rm -rf $RPM_BUILD_ROOT
