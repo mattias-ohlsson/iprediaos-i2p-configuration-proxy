@@ -1,6 +1,6 @@
 Name:		iprediaos-i2p-configuration-proxy
-Version:	0.0.1
-Release:	2%{?dist}
+Version:	0.1
+Release:	1%{?dist}
 Summary:	Proxy configuration for IprediaOS
 
 Group:		System Environment/Base
@@ -46,4 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 
 
 %changelog
-
+* Tue Apr 10 2012 Mattias Ohlsson <mattias.ohlsson@inprose.com> - 0.1-1
+- Initial package
